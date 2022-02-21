@@ -1,12 +1,11 @@
 import {useState, useEffect} from 'react'
 import { useSelector, useDispatch } from "react-redux";
-// import {  } from '../street/streetsSlice';
 
 export const Input = ({htmlFor, label, id, type, placeholder, selectAll, fetch, fetchNext, clearHouse, clearFlat, selectStatus}) => {
 
     const dispatch = useDispatch()
     const names = useSelector(selectAll)
-    
+
     const [name, setName] = useState('')
     const [subject, setSubject] = useState('')
 
